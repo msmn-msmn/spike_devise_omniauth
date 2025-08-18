@@ -15,7 +15,7 @@ gem "turbo-rails"
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
-gem "cssbundling-rails"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 # Use Redis adapter to run Action Cable in production
@@ -40,6 +40,10 @@ gem "dartsass-rails"
 
 gem "devise", "~> 4.9.4"
 
+gem "sassc-rails"  # Sassコンパイラ
+
+gem "bootstrap", "~> 5.2"  # CSS用
+
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
@@ -51,6 +55,9 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
 
   gem "foreman"
+
+  gem "rspec-rails"
+  gem "factory_bot_rails"
 end
 
 group :development do
